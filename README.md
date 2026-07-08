@@ -1,9 +1,17 @@
-# Phantom Cushion
+# Phantom Cushions
 
-## Setup
+---
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+Phantom Cushions adds a craftable invisible cushion that works like a normal wool cushion, but disappears when placed.
 
-## License
+---
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+The cushions become temporarily visible only when looking directly at them, or while holding a phantom cushion in your hand.
+
+![Showcase GIF](./assets/showcase.gif)
+
+---
+
+The phantom cushion can be crafted by combining any wool cushion with a phantom membrane. They only have one universal phantom color, but they can be crafted back into normal cushions by combining them with wool.
+
+![Crafting recipes GIF](./assets/crafting.gif)
