@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:cushions"
+  ],
+  "fabric:remove": [
+    "phantomcushion:phantom_cushion"
+  ]
+}

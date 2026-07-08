@@ -9,17 +9,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.gamerules.GameRules;
-import net.minecraft.world.level.storage.ValueInput;
 
 public class PhantomCushionEntity extends Cushion {
 	public PhantomCushionEntity(EntityType<Cushion> entityType, Level level) {
 		super(entityType, level);
-		setInvisible(false);
-	}
-
-	@Override
-	protected void readAdditionalSaveData(ValueInput input) {
-		super.readAdditionalSaveData(input);
 		setInvisible(false);
 	}
 

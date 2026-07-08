@@ -15,7 +15,7 @@ public class ModItems {
 
 	public static void initialize() {
 		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COLORED_BLOCKS)
-				.register(output -> output.insertAfter(Items.CUSHION.black(), PHANTOM_CUSHION));
+				.register(output -> output.insertAfter(Items.CUSHION.pink(), PHANTOM_CUSHION));
 	}
 
 	private static Item register(String path, Item item) {
