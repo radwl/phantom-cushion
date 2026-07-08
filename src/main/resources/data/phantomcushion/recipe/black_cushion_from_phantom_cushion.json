@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "phantom_cushion_restore",
+  "ingredients": [
+    "phantomcushion:phantom_cushion",
+    "minecraft:black_wool"
+  ],
+  "result": {
+    "id": "minecraft:black_cushion"
+  }
+}

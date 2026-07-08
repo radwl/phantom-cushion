@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "phantomcushion",
+	"version": "${version}",
+	"name": "Phantom Cushion",
+	"description": "Adds the Phantom Cushion item, an invisible variant of the wool cushions.",
+	"authors": [
+		"radwl"
+	],
+	"contact": {
+		"sources": "https://github.com/radwl/phantom-cushion"
+	},
+	"license": "LGPL-3.0",
+	"icon": "assets/phantomcushion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.radwl.phantomcushion.PhantomCushion"
+		],
+		"client": [
+			"com.radwl.phantomcushion.client.PhantomCushionClient"
+		]
+	},
+	"mixins": [
+		"phantomcushion.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.3-",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
