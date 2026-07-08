@@ -1,6 +1,6 @@
 # Phantom Cushions
 
----
+[![modrinth](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg)](https://modrinth.com/mod/phantom-cushion)
 
 Phantom Cushions adds a craftable invisible cushion that works like a normal wool cushion, but disappears when placed.
 
