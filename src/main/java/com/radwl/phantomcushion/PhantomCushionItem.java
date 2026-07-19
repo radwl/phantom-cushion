@@ -22,7 +22,7 @@ import net.minecraft.world.phys.Vec3;
 
 public class PhantomCushionItem extends CushionItem {
 	public PhantomCushionItem(Properties properties) {
-		super(properties.setId(ModItems.key("phantom_cushion")), DyeColor.WHITE);
+		super(properties.setId(ModItems.key("phantom_cushion")));
 	}
 
 	@Override
