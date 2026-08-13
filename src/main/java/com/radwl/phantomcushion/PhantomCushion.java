@@ -1,5 +1,7 @@
 package com.radwl.phantomcushion;
 
+import com.radwl.phantomcushion.entity.ModEntityTypes;
+import com.radwl.phantomcushion.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -18,7 +20,7 @@ public class PhantomCushion implements ModInitializer {
 		ModItems.initialize();
 	}
 
-	public static Identifier id(String path) {
+	public static Identifier createId(String path) {
 		return Identifier.fromNamespaceAndPath(MOD_ID, path);
 	}
 }

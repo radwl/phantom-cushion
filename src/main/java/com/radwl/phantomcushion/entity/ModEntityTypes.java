@@ -1,5 +1,6 @@
-package com.radwl.phantomcushion;
+package com.radwl.phantomcushion.entity;
 
+import com.radwl.phantomcushion.PhantomCushion;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -9,7 +10,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.decoration.Cushion;
 
 public class ModEntityTypes {
-	public static final ResourceKey<EntityType<?>> PHANTOM_CUSHION_KEY = ResourceKey.create(Registries.ENTITY_TYPE, PhantomCushion.id("phantom_cushion"));
+	public static final ResourceKey<EntityType<?>> PHANTOM_CUSHION_KEY = ResourceKey.create(Registries.ENTITY_TYPE, PhantomCushion.createId("phantom_cushion"));
 
 	public static final EntityType<Cushion> PHANTOM_CUSHION = Registry.register(
 			BuiltInRegistries.ENTITY_TYPE,

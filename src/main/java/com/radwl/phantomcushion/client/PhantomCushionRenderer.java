@@ -3,7 +3,7 @@ package com.radwl.phantomcushion.client;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import com.radwl.phantomcushion.ModItems;
+import com.radwl.phantomcushion.item.ModItems;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
 
@@ -68,11 +68,11 @@ public class PhantomCushionRenderer extends EntityRenderer<Cushion, PhantomCushi
 	}
 
 	@Override
-	public boolean shouldRender(Cushion cushion, Frustum frustum, double x, double y, double z) {
+	public boolean shouldRender(Cushion cushion, Frustum frustum, double x, double y, double z, final float partialTicks) {
 		if (isHoldingPhantomCushion()) {
 			return frustum.isVisible(cushion.getBoundingBox());
 		}
-		return super.shouldRender(cushion, frustum, x, y, z);
+		return super.shouldRender(cushion, frustum, x, y, z, partialTicks);
 	}
 
 	private float updateRevealAlpha(Cushion cushion, float tickDelta) {

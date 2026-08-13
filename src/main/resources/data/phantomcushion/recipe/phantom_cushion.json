@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    "#phantomcushion:cushions_exclude_phantom",
+    "#phantomcushion:cushions_to_phantom_cushion",
     "minecraft:phantom_membrane"
   ],
   "result": {
