@@ -57,8 +57,8 @@ public class PhantomCushionRenderer extends EntityRenderer<Cushion, PhantomCushi
 	public void submit(PhantomCushionRenderState renderState, PoseStack poseStack, SubmitNodeCollector submitNodeCollector, CameraRenderState cameraRenderState) {
 		if (renderState.visible) {
 			poseStack.pushPose();
-			poseStack.mulPose(Axis.YP.rotationDegrees(renderState.direction.toYRot()));
-			poseStack.mulPose(Axis.XP.rotationDegrees(180.0F));
+			poseStack.rotateDegrees(Axis.YP, 180.0F - renderState.direction.toYRot());
+			poseStack.rotateDegrees(Axis.XP, 180.0F);
 			poseStack.translate(0.0, -0.25, 0.0);
 			submitNodeCollector.submitModel(this.model, renderState, poseStack, RenderTypes.entityTranslucentCull(renderState.texture), renderState.lightCoords, OverlayTexture.NO_OVERLAY, renderState.color, null, renderState.outlineColor);
 			poseStack.popPose();
